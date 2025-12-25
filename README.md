@@ -1,6 +1,6 @@
 # Лабораторная работа №3.
 ## Вариант 4
-$$\{wba^{n+1}ba*w^Rv | w, v \in (aa^+b)^+a?\}$$
+$$L = \{wba^{n+1}ba*w^Rv | w, v \in (aa^+b)^+a?\}$$
 
 ## DPDA 
 
@@ -36,9 +36,9 @@ $V \rightarrow aaB$
 
 $B \rightarrow aB | bC \space \space \space \space (First(B)=\{a, b\})$
 
-$C \rightarrow aE | \varepsilon \space \space \space \space (First(C)=\{a, \$\})$
+$C \rightarrow aE | \varepsilon \space \space \space \space$ `(First(C)={a, $})`
 
-$E \rightarrow \varepsilon | aB \space \space \space \space (First(E)=\{a, \$\})$
+$E \rightarrow \varepsilon | aB \space \space \space \space$ `(First(E)={a, $})`
 
 ### LL(2)-грамматика $G_1$ без $\varepsilon$-правил
 
@@ -101,6 +101,8 @@ a_{13}a_5, a_{13}b_7, a_{14}a_{15}, a_{15}b_8, b_{16}a_{17}, a_{17}a_{20}, a_{17
 
 ![Недетерминированный LL(1)-автомат](ll1nfa.png)
 
+Детерминированный LL(1)-автомат
+
 ![Детерминированный LL(1)-автомат](ll1dfa.png)
 
 ### Пересечение с исходной грамматикой.
@@ -141,9 +143,9 @@ $X_8 \rightarrow B_bA$
 
 $A \rightarrow A_aA$
 
-$A \rightarrow A_a$
+$A \rightarrow a$
 
-$A_1 \rightarrow B_b$
+$A_1 \rightarrow b$
 
 $A_1 \rightarrow B_bA$
 
@@ -155,11 +157,11 @@ $B \rightarrow B_bE$
 
 $B \rightarrow A_aB$
 
-$B \rightarrow B_b$
+$B \rightarrow b$
 
 $E \rightarrow A_aX_9$
 
-$E \rightarrow A_a$
+$E \rightarrow a$
 
 $A_a \rightarrow a$
 
