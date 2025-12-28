@@ -182,3 +182,7 @@ $B_b \rightarrow b$
 ![LR(0)-автомат](img/lr0dfa.png)
 
 Пересечение этого автомата с грамматикой находится в файле [intersection_grammar_lr0.txt](grammars/intersection_grammar_lr0.txt)
+
+## Фазз-тестирование
+
+Код фазз-тестирования находится в файле [fazz.cpp](fazz.cpp)
