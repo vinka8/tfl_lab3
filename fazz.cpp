@@ -349,15 +349,15 @@ int main() {
     int N = 10;
     auto words = generate_words(N);
 
-    DFA lr0dfa = read_dfa("dfalr0.dot");
-    auto [term_rules1, bin_rules1] = laod_inters("intersection_grammar_lr0.txt");
+    DFA lr0dfa = read_dfa("grammars/dfalr0.dot");
+    auto [term_rules1, bin_rules1] = laod_inters("grammars/intersection_grammar_lr0.txt");
     string q01 = "21"; 
     set<string> final_states1 = {"1","3","10","12"}; 
     set<string> start_symbols1;
     for (auto &qf1 : final_states1) start_symbols1.insert("<" + q01 + ",S," + qf1 + ">");
 
-    DFA ll1dfa = read_dfa("dfa_ll1.dot");
-    auto [term_rules2, bin_rules2] = laod_inters("intersection_grammar_ll1.txt");
+    DFA ll1dfa = read_dfa("grammars/dfa_ll1.dot");
+    auto [term_rules2, bin_rules2] = laod_inters("grammars/intersection_grammar_ll1.txt");
     string q02 = "26"; 
     set<string> final_states2 = {"1","3","9","12"}; 
     set<string> start_symbols2;
